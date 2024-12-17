@@ -3,7 +3,7 @@ export const ExpenseModel = {
       const errors = {};
 
       if (!expense.title || expense.title.length < 2 || expense.title.length > 20) {
-        errors.name = "Title must be between 3 and 20 characters";
+        errors.title = "Title must be between 3 and 20 characters";
       }
 
       if (!expense.amount || expense.amount < 0 ) {
@@ -11,7 +11,7 @@ export const ExpenseModel = {
       }
 
       if (!expense.category || expense.category.length < 4 || expense.category.length > 20) {
-        errors.city = "Category must be between 4 and 20 characters";
+        errors.category = "Category must be between 4 and 20 characters";
       }
 
       console.log("validation errors:", errors);

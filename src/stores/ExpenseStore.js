@@ -4,6 +4,7 @@ import {ExpenseModel} from "../services/ExpenseModel.js";
 export const useExpenseStore = defineStore('expenseStore', {
     state: () => ({
         expenses: [],
+        reports: [],
         loading: false,
         error: null,
         success: null,

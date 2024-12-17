@@ -22,7 +22,7 @@ const newExpense = ref({
 
 const addExpense = async () => {
   await expenseStore.addExpense(newExpense.value);
-  resetForm();
+    resetForm();
 }
 
 const resetForm = () => {

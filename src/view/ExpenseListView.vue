@@ -58,8 +58,6 @@ const removeFilter = async (index) => {
     await expenseStore.fetchExpenses(0, filters.value);
   }
 }
-
-
 const searchData = async () => {
   const f = filters.value;
   console.log('Array - >', f)
@@ -79,7 +77,6 @@ const searchData = async () => {
     </div>
   </nav>
 
-  <hr>
   <section id="expense-list mb-3" style="margin-left: 10px">
 
     <div id="filter-component" class="filter-container">
@@ -143,7 +140,6 @@ const searchData = async () => {
       </button>
 
     </div>
-
 
     <div v-if="filters.length" class="filters-list">
       <h5 class="ms-0">Filters:</h5>

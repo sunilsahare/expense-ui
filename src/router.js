@@ -7,7 +7,6 @@ import HomeLayout from "./layout/HomeLayout.vue";
 import AddExpenseView from "./view/AddExpenseView.vue";
 import ExpenseEditView from "./view/ExpenseEditView.vue";
 import ExpenseListView from "./view/ExpenseListView.vue";
-import HomeView from "./view/HomeView.vue";
 
 function isLoggedIn() {
     const userStore = useUserStore()
@@ -39,7 +38,7 @@ const routes = [
             [
                 {
                     path: '/',
-                    name: 'EmployeeList',
+                    name: 'ExpenseList',
                     component: ExpenseListView,
                     meta: { requiresAuth: true }
                 },

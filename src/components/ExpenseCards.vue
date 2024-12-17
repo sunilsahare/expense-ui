@@ -1,5 +1,5 @@
 <template>
-  <div v-if="expenses && expenses.length" class="container" style="display: inline-grid; width: 78vh !important;">
+  <div v-if="expenses && expenses.length" class="container" style="display: -webkit-inline-box;; width: 78vh !important;">
         <article v-for="expense in expenses" :key="expense.expenseId" class="box" >
             <header>
                 <h3>{{ expense.title }}</h3>
@@ -18,11 +18,6 @@
             </footer>
         </article>
     </div>
-<!--  <div class="pagination" style="margin-top: 400px !important;">-->
-<!--    <button :disabled="ExpenseService.pagination.page === 0" @click="previousPage()">Previous</button>-->
-<!--    <span> Page {{ExpenseService.pagination.page + 1 }} of {{ExpenseService.pagination.totalPages}}</span>-->
-<!--    <button class="page-link" :disabled="ExpenseService.pagination.page === ExpenseService.pagination.totalPages-1" @click="nextPage()">Next</button>-->
-<!--  </div>-->
 
 </template>
 <script setup>
