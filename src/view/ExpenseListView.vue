@@ -79,7 +79,7 @@ const searchData = async () => {
 
   <section id="expense-list mb-3" style="margin-left: 10px">
 
-    <div id="filter-component" class="filter-container">
+    <div id="filter-component" class="filter-container mt-3">
       <label class="text-primary p-2 pb-0 ms-0" style="display: block"><h4>Advanced Filter</h4></label>
       <select v-model="selectedColumn" @change="resetInput" class="dropdown">
         <option disabled value="">Select Column</option>
@@ -153,7 +153,7 @@ const searchData = async () => {
     </div>
 
 
-    <hr style="margin-top: 4px">
+    <hr>
     <div style="text-align: left; font-size: 20px;" class="mb-2 ms-1">
       View as:
       <div class="form-check form-check-inline">

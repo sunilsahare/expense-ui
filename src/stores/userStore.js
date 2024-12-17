@@ -50,7 +50,9 @@ export const useUserStore = defineStore('userStore', () => {
 
     const logout = () => {
         privateState.username = null;
-        localStorage.removeItem("username")
+        localStorage.removeItem("username");
+        privateState.authToken = null;
+        localStorage.removeItem("token");
     }
     const isAuthenticated = computed(() => {
         const result = !!privateState.username
